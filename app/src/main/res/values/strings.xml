@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PJ1.1</string>
+    <string name="login">Login</string>
+    <string name="forget_password"><u>Forget password?</u></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="no_account_yet_create_one">No account yet? <u><b>Create one</b></u></string>
+    <string name="name">Name</string>
+    <string name="already_a_member_login">Already a member? <u><b>Login</b></u></string>
+    <string name="create_account">Create Account</string>
+    <string name="create"><b>create</b></string>
+    <string name="supply_chain_code">supply chain code</string>
+    <string name="join"><b>join</b></string>
+    <string name="facebook_app_id">662171580973881</string> <string name="fb_login_protocol_scheme">fb662171580973881</string>
+    <string name="or">or</string>
+    <string name="create_one"><b>create one</b></string>
+    <string name="send">send</string>
+    <string name="type_your_email">Type Your Email</string>
+    <string name="we_ll_reset_your_password">we\'ll reset your password.</string>
+
+</resources>

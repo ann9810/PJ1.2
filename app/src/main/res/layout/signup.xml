@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5BDC0">
+
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="5dp"
+        android:background="#D1CAB5"
+        android:text="@string/create_account"
+        android:textColor="#D7271601"
+        app:layout_constraintBottom_toTopOf="@+id/link_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourPassword"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="470dp">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/enterYourEmail"
+        android:layout_width="312dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="340dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/enterYourName"
+        android:layout_width="312dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="300dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/enterYourPassword"
+        android:layout_width="312dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/createAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="410dp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/link_login"
+        android:layout_width="312dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:text="@string/already_a_member_login"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:textColor="#D7011A27"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccount"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="530dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="312dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/enterYourEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourName"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="320dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="312dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/enterYourPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourEmail"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="390dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="312dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/enterYourName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="250dp">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
